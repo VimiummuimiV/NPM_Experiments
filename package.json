@@ -1,0 +1,30 @@
+{
+  "name": "kg_chat_empowerment",
+  "version": "1.0.0",
+  "main": "KG_Chat_Empowerment.js",
+  "scripts": {
+    "build": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "start": "webpack serve --mode development --open",
+    "watch": "webpack --watch",
+    "clean": "rimraf dist",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "chat",
+    "klavogonki",
+    "conversation"
+  ],
+  "author": "Patcher",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "raw-loader": "^4.0.2",
+    "rimraf": "^5.0.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^4.15.2"
+  }
+}
