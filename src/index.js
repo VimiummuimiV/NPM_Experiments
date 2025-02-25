@@ -1,6 +1,3 @@
-// Import the SVG icons from icons.js
-import * as icons from './icons.js';
-
 // Global styles
 const empowermentStyles = `
     /* input error indication */

@@ -1,46 +1,22 @@
-const path = require('path');
 const fs = require('fs');
-const webpack = require('webpack');
+const path = require('path');
 
-// Read the content of the headers.js file
-const header = fs.readFileSync(path.resolve(__dirname, 'KG_Chat_Empowerment', 'headers.js'), 'utf8');
+// Read the content of the headers.js file and trim it to remove any leading/trailing whitespace
+const header = fs.readFileSync(path.resolve(__dirname, 'src', 'headers.js'), 'utf8').trim();
 
-// Read the content of the main script file (index.js)
-const script = fs.readFileSync(path.resolve(__dirname, 'KG_Chat_Empowerment', 'index.js'), 'utf8');
+// Read the content of the main script file (index.js) and trim
+const script = fs.readFileSync(path.resolve(__dirname, 'src', 'index.js'), 'utf8').trim();
 
-// Combine the contents: prepend header to script
-const combinedContent = header + script;
+// Read the content of the icons.js file and trim
+const icons = fs.readFileSync(path.resolve(__dirname, 'src', 'icons.js'), 'utf8').trim();
 
-module.exports = {
-  entry: './KG_Chat_Empowerment/index.js',  // Entry point is your main script file (index.js)
-  output: {
-    filename: 'KG_Chat_Empowerment_with_headers.js', // Final output file
-    path: path.resolve(__dirname, 'dist'), // Output directory
-    library: 'KGChatEmpowerment', // Optional, in case you need to reference the library globally
-    libraryTarget: 'var', // If using as a global variable in the browser
-    globalObject: 'this', // Ensures compatibility across environments
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/, // Process all JavaScript files
-        use: {
-          loader: 'raw-loader', // To load the raw content of JS files
-        },
-        include: path.resolve(__dirname, 'KG_Chat_Empowerment'), // Your script files
-      },
-    ],
-  },
-  plugins: [
-    new webpack.BannerPlugin({
-      banner: combinedContent, // Inject the combined header and script content
-      raw: true, // Ensure the content is treated as raw text
-      entryOnly: true, // Only add this to the entry file (not external files)
-    }),
-  ],
-  mode: 'production', // You can change this to 'development' for debugging
-  optimization: {
-    minimize: true, // Minify the output for production
-  },
-  devtool: 'source-map', // Enables source maps for easier debugging
-};
+// Combine the content (icons, header, script) and wrap it inside the Tampermonkey function
+const combinedContent = `${header}
+(function() {
+${icons}
+${script}
+})();
+`;
+
+// Write the combined content to a new file
+fs.writeFileSync(path.resolve(__dirname, 'dist', 'KG_Chat_Empowerment.js'), combinedContent, 'utf8');

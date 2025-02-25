@@ -4,7 +4,7 @@ const iconSize = 28;
 
 // SVG icon for entering
 const enterSVGStrokeColor = "currentColor";
-export const enterSVG = `
+const enterSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -20,7 +20,7 @@ export const enterSVG = `
 
 // SVG icon for leaving
 const leaveSVGStrokeColor = "currentColor";
-export const leaveSVG = `
+const leaveSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -36,7 +36,7 @@ export const leaveSVG = `
 // SVG icon for the moderator with gradient
 const moderatorSVGStopColorStart = "rgb(255, 215, 0)";
 const moderatorSVGStopColorEnd = "rgb(255, 140, 0)";
-export const moderatorSVG = `
+const moderatorSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 10}"
       height="${iconSize - 10}"
@@ -58,7 +58,7 @@ export const moderatorSVG = `
 // SVG icon for the tracked with gradient stroke
 const trackedSVGStopColorStart = "rgb(135, 206, 250)";
 const trackedSVGStopColorEnd = "rgb(0, 191, 255)";
-export const trackedSVG = `
+const trackedSVG = `
   <svg xmlns="${svgUrl}"
        width="${iconSize - 12}"
        height="${iconSize - 12}"
@@ -82,7 +82,7 @@ export const trackedSVG = `
 
 // SVG icon for ignored users
 const ignoredSVGStrokeColor = "rgb(255, 160, 122)";
-export const ignoredSVG = `
+const ignoredSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -97,7 +97,7 @@ export const ignoredSVG = `
 
 // SVG markup for a clock icon
 const clockSVGStrokeColor = "currentColor";
-export const clockSVG = `
+const clockSVG = `
   <svg xmlns="${svgUrl}"
        width="${iconSize - 12}"
        height="${iconSize - 12}"
@@ -112,7 +112,7 @@ export const clockSVG = `
 
 // SVG for the "chevron right" icon, used in a popup chat messages
 const actionSVGStrokeColor = "currentColor";
-export const actionSVG = `
+const actionSVG = `
     <svg xmlns="${svgUrl}"
         width="${iconSize - 12}"
         height="${iconSize - 12}"
@@ -126,7 +126,7 @@ export const actionSVG = `
 
 // SVG markup for a user icon
 const userSVGStrokeColor = "currentColor";
-export const userSVG = `
+const userSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -143,7 +143,7 @@ export const userSVG = `
 const silenceSVGStrokeColor = "hsl(355, 80%, 65%)";
 const beepSVGStrokeColor = "hsl(55, 80%, 65%)";
 const voiceSVGStrokeColor = "hsl(80, 80%, 40%)";
-export const silenceSVG = `
+const silenceSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -157,7 +157,7 @@ export const silenceSVG = `
     <line x1="17" y1="9" x2="23" y2="15"></line>
   </svg>`;
 
-export const beepSVG = `
+const beepSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -171,7 +171,7 @@ export const beepSVG = `
     <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
   </svg>`;
 
-export const voiceSVG = `
+const voiceSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -188,7 +188,7 @@ export const voiceSVG = `
 // Icons for message mode button
 // Button SVG icons "every", "mention" representation
 const modeEverySVGStrokeColor = "hsl(100, 50%, 50%)";
-export const iconModeEvery = `
+const iconModeEvery = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -204,7 +204,7 @@ export const iconModeEvery = `
   </svg>`;
 
 const modeMentionSVGStrokeColor = "hsl(180, 60%, 50%)";
-export const modeMentionSVG = `
+const modeMentionSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -219,7 +219,7 @@ export const modeMentionSVG = `
 
 // Icon for the out of range value
 const rangeisOutSVGStrokeColor = "currentColor";
-export const iconRangeisOut = `
+const iconRangeisOut = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -234,7 +234,7 @@ export const iconRangeisOut = `
 
 // Icon for userlistCache
 const userlistCacheSVGStrokeColor = "rgb(180, 213, 131)";
-export const userlistCacheSVG = `
+const userlistCacheSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -250,7 +250,7 @@ export const userlistCacheSVG = `
 
 // Icon for personal messages
 const personalMessagesSVGStrokeColor = "rgb(255, 160, 122)";
-export const personalMessagesSVG = `
+const personalMessagesSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -265,7 +265,7 @@ export const personalMessagesSVG = `
 
 // Icon for chat logs
 const chatLogsSVGStrokeColor = "rgb(100, 149, 237)";
-export const chatLogsSVG = `
+const chatLogsSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize}"
       height="${iconSize}"
@@ -283,7 +283,7 @@ export const chatLogsSVG = `
 
 // Icon for media messages
 const mediaMessagesSVGStrokeColor = "rgb(113, 196, 196)";
-export const mediaMessagesSVG = `
+const mediaMessagesSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -304,7 +304,7 @@ export const mediaMessagesSVG = `
 
 // Icon for the disabled chat button
 const deniedSVGStrokeColor = "rgb(255, 100, 100)";
-export const deniedSVG = `
+const deniedSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -319,7 +319,7 @@ export const deniedSVG = `
 
 // Inline SVG source for the settings icon
 const settingsSVGStrokeColor = "rgb(255, 228, 196)";
-export const settingsSVG = `
+const settingsSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -341,7 +341,7 @@ export const settingsSVG = `
 
 // Inline SVG source for the "x" icon (close button)
 const closeSVGStrokeColor = "rgb(144, 238, 144)";
-export const closeSVG = `
+const closeSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -356,7 +356,7 @@ export const closeSVG = `
 
 // Inline SVG source for the "chevrons up" icon
 const chevronsSVGStrokeColor = "rgb(211, 211, 211)";
-export const chevronsUpSVG = `
+const chevronsUpSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -370,7 +370,7 @@ export const chevronsUpSVG = `
   </svg>`;
 
 // Inline SVG source for the "chevron up" icon
-export const chevronUpSVG = `
+const chevronUpSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -383,7 +383,7 @@ export const chevronUpSVG = `
   </svg>`;
 
 // Inline SVG source for the "chevron down" icon
-export const chevronDownSVG = `
+const chevronDownSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -396,7 +396,7 @@ export const chevronDownSVG = `
   </svg>`;
 
 // Inline SVG source for the "chevrons down" icon
-export const chevronsDownSVG = `
+const chevronsDownSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -411,7 +411,7 @@ export const chevronsDownSVG = `
 
 // Inline SVG source for the "toggle-right" icon
 const toggleRightSVGStrokeColor = "rgb(137, 187, 255)";
-export const toggleRightSVG = `
+const toggleRightSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -426,7 +426,7 @@ export const toggleRightSVG = `
 
 // Inline SVG source for the "toggle-left" icon
 const toggleLeftSVGStrokeColor = "rgb(137, 187, 255)";
-export const toggleLeftSVG = `
+const toggleLeftSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -441,7 +441,7 @@ export const toggleLeftSVG = `
 
 // Inline SVG source for the "calendar" icon
 const calendarSVGStrokeColor = "rgb(176, 196, 222)";
-export const calendarSVG = `
+const calendarSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -458,7 +458,7 @@ export const calendarSVG = `
 
 // Inline SVG source for the "clipboard" icon
 const clipboardSVGStrokeColor = "rgb(176, 196, 222)";
-export const clipboardSVG = `
+const clipboardSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -473,7 +473,7 @@ export const clipboardSVG = `
 
 // SVG for the "chevron left" icon, used to change chat logs one day backward
 const chevronLeftSVGStrokeColor = "rgb(28, 229, 229)";
-export const chevronLeftSVG = `
+const chevronLeftSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -487,7 +487,7 @@ export const chevronLeftSVG = `
 
 // SVG for the "chevron right" icon, used to change chat logs one day forward
 const chevronRightSVGStrokeColor = "rgb(28, 229, 229)";
-export const chevronRightSVG = `
+const chevronRightSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -501,7 +501,7 @@ export const chevronRightSVG = `
 
 // SVG for the "shuffle" icon, used to select a random year, month, and day
 const shuffleSVGStrokeColor = "rgb(169, 155, 255)";
-export const shuffleSVG = `
+const shuffleSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -519,7 +519,7 @@ export const shuffleSVG = `
 
 // Inline SVG source for the trash icon
 const trashSVGStrokeColor = "rgb(255, 140, 0)";
-export const trashSVG = `
+const trashSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -536,7 +536,7 @@ export const trashSVG = `
 
 // Inline SVG source for the users icon
 const usersSVGStrokeColor = "currentColor";
-export const usersSVG = `
+const usersSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -551,9 +551,9 @@ export const usersSVG = `
     <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
   </svg>`;
 
-// Inline SVG source for the "import" icon (export button)
+// Inline SVG source for the "import" icon (button)
 const importSVGStrokeColor = "rgb(209, 144, 238)";
-export const importSVG = `
+const importSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -569,7 +569,7 @@ export const importSVG = `
 
 // Inline SVG source for the "export" icon (import button)
 const exportSVGStrokeColor = "rgb(144, 185, 238)";
-export const exportSVG = `
+const exportSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -585,7 +585,7 @@ export const exportSVG = `
 
 // Inline SVG source for the "save" icon (save button)
 const saveSVGStrokeColor = "rgb(144, 238, 220)";
-export const saveSVG = `
+const saveSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 4}"
       height="${iconSize - 4}"
@@ -601,7 +601,7 @@ export const saveSVG = `
 
 // Inline SVG source for the "remove" icon (remove button)
 const removeSVGStrokeColor = "rgb(238, 144, 144)";
-export const removeSVG = `
+const removeSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
@@ -616,7 +616,7 @@ export const removeSVG = `
 
 // Inline SVG source for the "snowflake" icon
 const snowflakeSVGStrokeColor = "rgb(176, 196, 222)";
-export const snowflakeSVG = `
+const snowflakeSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 8}"
       height="${iconSize - 8}"
@@ -643,7 +643,7 @@ export const snowflakeSVG = `
 
 // Inline SVG source for the "add" icon (add button)
 const addSVGStrokeColor = "rgb(209, 144, 238)";
-export const addSVG = `
+const addSVG = `
   <svg xmlns="${svgUrl}"
       width="${iconSize - 12}"
       height="${iconSize - 12}"
